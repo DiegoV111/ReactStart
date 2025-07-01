@@ -4,9 +4,11 @@ import './index.css'
 import App from './App.jsx'
 import Peliculas from './assets/components/peliculas.jsx'
 import Libros from './assets/components/libros.jsx'
+import Dashboard from './assets/dashDinamico/dashboard.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App/>
+    <App />
   </StrictMode>,
 )

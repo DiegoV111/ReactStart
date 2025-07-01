@@ -1,9 +1,7 @@
 import './App.css'
 
-import Gallery from '../../part1/src/assets/components/gallery';
-import Menu from './assets/components/menu';
-import EmployeeList from './assets/components/listaEmpleados';
-import Category from './assets/components/category';
+
+/*import Category from './assets/components/category';
 
 const productos = [
   { nombre: "iPhone 15", precio: 999, descuento: 10, categoria: "Electrónicos" },
@@ -34,5 +32,43 @@ function App() {
   );
 }
 
+export default App;*/
+
+import Blog from './assets/anidados/blog';
+
+const posts = [
+  {
+    id: 1,
+    title: "Primer Post",
+    author: { name: "Ana Pérez", role: "Autora" },
+    date: "2025-07-01",
+    content: "Este es el contenido del primer post.",
+    images: [
+      "https://via.placeholder.com/150",
+      "https://via.placeholder.com/160"
+    ],
+    comments: [
+      { author: { name: "Luis", role: "Lector" }, text: "Muy interesante." },
+      { author: { name: "Marta", role: "Lectora" }, text: "Gracias por compartir." }
+    ]
+  },
+  {
+    id: 2,
+    title: "Segundo Post",
+    author: { name: "Carlos Ruiz", role: "Editor" },
+    date: "2025-07-02",
+    content: "Contenido del segundo post, más profundo.",
+    images: ["https://via.placeholder.com/170"],
+    comments: [
+      { author: { name: "Lucía", role: "Lectora" }, text: "Excelente artículo." }
+    ]
+  }
+];
+
+const App = () => {
+  return <Blog posts={posts} />;
+};
+
 export default App;
+
 
